@@ -34,7 +34,7 @@ export default function Home({articles}) {
         <title>Orlęta Kielce | Oficjalna strona</title>
         <meta name="description" content="Orlęta Kielce - Akademia ze srebrną gwiazdką certyfikacji PZPN" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://media.graphassets.com/smM8FGuATd6E2SaxTtgJ" />
       </Head>
       {/* {articles ? articles.map(article=> <p key={article.title}>{article.title}</p>) : 'loading...'} */}
       <div className="wrapper homepage">
@@ -127,7 +127,7 @@ export default function Home({articles}) {
         <p className='inline-block text-2xl pb-2 font-bold border-b-green-600 mb-5 border-b-2'>Wpadnij do nas na FB...</p>
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOrletaKielce%2F%3Flocale%3Dpl_PL&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" className='mx-auto mt-3 mb-10 rounded-md shadow-md'></iframe>
         <p className='inline-block text-2xl pb-2 font-bold border-b-green-600 mb-5 border-b-2'>... albo Instagrama 😜</p>
-        <iframe src="https://www.instagram.com/orleta_kielce_1950/embed" width="400" height="480" frameborder="0" scrolling="no" allowtransparency="true" className='mx-auto mt-3 mb-10 rounded-md shadow-md'></iframe>
+        <iframe src="https://www.instagram.com/orleta_kielce_1950/embed" width="340" height="500" frameborder="0" scrolling="no" allowtransparency="true" className='mx-auto mt-3 mb-10 rounded-md shadow-md'></iframe>
         </div>
       </div>
     </Layout>
