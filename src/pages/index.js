@@ -34,7 +34,7 @@ export default function Home({articles}) {
       </Head>
     <main>
       <h1 className='bg-green-700 py-4 text-center font-bold text-2xl text-white'>Orlęta Kielce</h1>
-      {articles ? articles.map(article=> <p>{article.title}</p>) : 'loading...'}
+      {articles ? articles.map(article=> <p key={article.title}>{article.title}</p>) : 'loading...'}
     </main>
     </>
   )
