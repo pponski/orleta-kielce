@@ -44,9 +44,15 @@ const Footer = () => {
             </li>
             <li>
             <div className="socials flex gap-5 text-3xl">
-        <FaFacebook className='icon'/>
-        <FaInstagram className='icon'/>
-        <FaTwitter className='icon'/>
+            <Link href="https://www.facebook.com/OrletaKielce/" target="_blank">
+          <FaFacebook class="hover:translate-y-[2px] transition ease-in duration-150"/>
+        </Link>
+        <Link href="https://www.instagram.com/orleta_kielce_1950/" target="_blank">
+        <FaInstagram class="hover:translate-y-[2px] transition ease-in duration-150"/>
+        </Link>
+        {/* <Link href="https://www.instagram.com/orleta_kielce_1950/" target="_blank">
+        <FaTwitter class="hover:translate-y-[2px] transition ease-in duration-150"/>
+        </Link> */}
         </div>
             </li>
           </ul>
