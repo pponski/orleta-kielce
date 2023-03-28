@@ -43,12 +43,12 @@ const Footer = () => {
               <Link href="/kontakt" className='first'>Kontakt</Link>
             </li>
             <li>
-            <div className="socials flex gap-5 text-3xl">
-            <Link href="https://www.facebook.com/OrletaKielce/" target="_blank">
-          <FaFacebook class="hover:translate-y-[2px] transition ease-in duration-150"/>
+            <div className="socials flex gap-5">
+            <Link className="first" href="https://www.facebook.com/OrletaKielce/" target="_blank">
+          <FaFacebook className="text-3xl"/>
         </Link>
-        <Link href="https://www.instagram.com/orleta_kielce_1950/" target="_blank">
-        <FaInstagram class="hover:translate-y-[2px] transition ease-in duration-150"/>
+        <Link className="first" href="https://www.instagram.com/orleta_kielce_1950/" target="_blank">
+        <FaInstagram className="text-3xl"/>
         </Link>
         {/* <Link href="https://www.instagram.com/orleta_kielce_1950/" target="_blank">
         <FaTwitter class="hover:translate-y-[2px] transition ease-in duration-150"/>
