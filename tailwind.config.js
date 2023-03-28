@@ -10,6 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'display': ['Oswald'],
+      'body': ['"Open Sans"'],
+    },
   },
   plugins: [],
 }

@@ -1,10 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+@layer base {
+  html {
+    font-family: 'Montserrat', sans-serif;
+    @apply bg-gray-50 text-zinc-700
+  }
+}
+/* ------- GLOBAL STYLES  --------------------------------------*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main{
+  @apply p-5
+}
+/* ---------------- GLOBAL STYLES end ------------------------- */
+
+
+
+/* ---------------- NAV ------------------------- */
+#nav {
+  @apply py-4 bg-green-700 text-white px-5
+}
+
+#nav .wrapper {
+  @apply flex items-center justify-between
+}
+
+#nav .wrapper ul {
+  @apply hidden lg:flex
+}
+
+#nav .wrapper ul li{
+  @apply px-5 py-2 hover:translate-y-[2px] transition ease-in duration-150
+}
+
+#nav .wrapper ul li a{
+  @apply text-sm font-semibold block
+}
+
+#nav .wrapper ul .submenu {
+  @apply block pb-4 text-[13px] text-zinc-500 hover:text-green-700 hover:translate-x-[2px] transition ease-in duration-150 font-semibold
+}
+#nav .wrapper ul .submenu.last {
+  @apply pb-0
+}
+/* ---------------- NAV end ------------------------- */
+
+
+
+
+/* ---------------- FOOTER  ------------------------- */
+footer {
+  @apply bg-zinc-700 text-white py-20 px-5
+}
+
+footer ul {
+  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-y-10
+}
+
+footer ul li a {
+  @apply block text-sm py-1 text-zinc-500 hover:translate-x-[2px] transition ease-in duration-150
+}
+
+footer ul li a.first {
+  @apply font-bold text-base pb-2 text-zinc-400 hover:translate-x-[0px] transition ease-in duration-150
+}
+
+footer .socials .icon {
+  @apply text-zinc-400 hover:translate-y-[2px] transition ease-in duration-150
+}
+/* ---------------- FOOTER end ------------------------- */
+
+.homepage {
+  @apply flex flex-col md:flex-row gap-5
+}
+
+.homepage .left{
+  @apply  lg:w-[70%]
+}
+.homepage .right{
+  @apply flex-grow flex flex-col
+}
+
+.single-post{
+  @apply lg:hover:scale-[1.02] transition duration-150 ease-linear
 }
