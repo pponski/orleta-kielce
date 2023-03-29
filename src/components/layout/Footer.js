@@ -9,14 +9,6 @@ const Footer = () => {
     <footer>
       <div className="wrapper">
       <ul>
-        <li>
-        <Link href="/" className='first'>
-          <Image src="https://media.graphassets.com/smM8FGuATd6E2SaxTtgJ" width="80" height="80" className='grayscale'></Image>
-        </Link>
-        </li>
-            <li>
-              <Link href="/" className='first'>Aktualności</Link>
-            </li>
             <li>
               <Link href="/akademia" className='first'>Akademia</Link>
               <Link href="/" className='submenu'>O nas</Link>
@@ -38,9 +30,6 @@ const Footer = () => {
               <Link href="/sponsorzy" className='first'>Sponsorzy</Link>
               <Link href="/" className='submenu'>Klub Orły Biznesu</Link>
               <Link href="/" className='submenu last'>Oferta sponsorska</Link>
-            </li>
-            <li>
-              <Link href="/kontakt" className='first'>Kontakt</Link>
             </li>
             <li>
             <div className="socials flex gap-5">

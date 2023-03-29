@@ -22,8 +22,29 @@
 }
 
 main{
-  @apply p-5
+  @apply px-5 py-10
 }
+
+.heading {
+  @apply inline-block text-2xl pb-2 font-bold border-b-green-600 mb-5 border-b-2 -skew-x-12
+}
+
+.article-content p > strong{
+  @apply block pb-3 text-justify
+}
+
+.article-content p {
+  @apply pb-5 text-justify
+}
+
+.categories {
+  @apply flex my-2 gap-2
+}
+
+
+/* .btn-primary {
+  @apply
+} */
 /* ---------------- GLOBAL STYLES end ------------------------- */
 
 
@@ -62,35 +83,35 @@ main{
 
 /* ---------------- FOOTER  ------------------------- */
 footer {
-  @apply bg-zinc-700 text-white py-20 px-5
+  @apply bg-slate-900 text-white py-20 px-5
 }
 
 footer ul {
-  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-y-10
+  @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-10
 }
 
 footer ul li a {
-  @apply block text-sm py-1 text-zinc-500 hover:translate-x-[2px] transition ease-in duration-150
+  @apply block text-sm py-1 text-slate-500 hover:translate-x-[2px] transition ease-in duration-150
 }
 
 footer ul li a.first {
-  @apply font-bold text-base pb-2 text-zinc-400 hover:translate-x-[0px] transition ease-in duration-150
+  @apply font-bold text-base pb-2 text-slate-300 hover:translate-x-[0px] transition ease-in duration-150
 }
 
 footer .socials .icon {
-  @apply text-zinc-400 hover:translate-y-[2px] transition ease-in duration-150
+  @apply text-slate-300 hover:translate-y-[2px] transition ease-in duration-150
 }
 /* ---------------- FOOTER end ------------------------- */
 
-.homepage {
-  @apply flex flex-col md:flex-row gap-5
+.page-layout {
+  @apply flex flex-col md:flex-row gap-10
 }
 
-.homepage .left{
+.page-layout .left{
   @apply  lg:w-[70%]
 }
-.homepage .right{
-  @apply flex-grow flex flex-col
+.page-layout .right{
+  @apply flex-grow flex flex-col lg:w-[30%]
 }
 
 .single-post{
