@@ -72,7 +72,7 @@ export default function Home({articles, nextMatch, lastMatch}) {
           <div className="mt-10">
             <p className='heading'>Najnowsze wiadomości</p>
             <SmallArticle img={true} shortDesc={true}/>
-            <SmallArticle img={true} shortDesc={true}/>
+            <SmallArticle img={false} shortDesc={true}/>
             <SmallArticle img={true} shortDesc={true}/>
           </div>
           <div className="my-10">
