@@ -39,15 +39,15 @@ const SLUGLIST = gql`
 }
 `;
 
-export async function getStaticPaths(){
-  const {articles} = await graphcms.request(SLUGLIST);
-  return {
-    paths: articles.map((article) => ({params: { slug: article.slug}})),
-    fallback: false,
-  }
-}
+// export async function getStaticPaths(){
+//   const {articles} = await graphcms.request(SLUGLIST);
+//   return {
+//     paths: articles.map((article) => ({params: { slug: article.slug}})),
+//     fallback: false,
+//   }
+// }
 
-export async function getStaticProps({params}) {
+export async function getServerSideProps({params}) {
   const slug = params.slug;
   const data = await graphcms.request(QUERY, { slug });
   const article = data.article;
