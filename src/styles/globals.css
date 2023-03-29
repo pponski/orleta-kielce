@@ -30,7 +30,7 @@ main{
 }
 
 .article-content p > strong{
-  @apply block pb-3 text-justify
+  @apply block text-justify
 }
 
 .article-content p {

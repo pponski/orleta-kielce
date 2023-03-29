@@ -2,7 +2,6 @@ import React from 'react'
 import {GraphQLClient, gql} from 'graphql-request';
 import Layout from './Layout';
 import Head from 'next/head';
-
 import Image from 'next/image';
 import SmallArticle from '@/components/SmallArticle';
 import CategoryBadge from '@/components/CategoryBadge';
@@ -45,7 +44,7 @@ export async function getStaticPaths(){
   const {articles} = await graphcms.request(SLUGLIST);
   return {
     paths: articles.map((article) => ({params: { slug: article.slug}})),
-    fallback: false,
+    fallback: true,
   }
 }
 
@@ -85,11 +84,14 @@ const Article = ({article}) => {
       <div className="wrapper page-layout">
         <div className="left">
         <Image src="https://media.graphassets.com/K9zZGA2UTFG6wviwRocZ" width="920" height="500" className='w-full rounded-md h-60 md:h-80 object-cover object-center md:group-hover:object-bottom transition-all duration-[2s] linear'></Image>
-        {article ? <h1 className='pt-6 text-3xl font-bold'>{article.title}</h1> : <p className='text-2xl text-center font-bold animate-pulse py-8'>Wczytywanie...</p>}
-        <div className="categories">
+        {article ? <h1 className='pt-6 pb-3 text-2xl md:text-4xl font-bold'>{article.title}</h1> : <p className='text-2xl text-center font-bold animate-pulse py-8'>Wczytywanie...</p>}
+        <div className="info flex items-center gap-4 pb-4">
+    <div className="categories">
           <CategoryBadge />
           <CategoryBadge />
-        </div>
+    </div>
+    <span className='text-xs py-1 font-medium text-slate-500'>10:51 10.04.2023r.</span>
+    </div>
         <div className="article-content" dangerouslySetInnerHTML={{ __html: article.description.html}}></div>
         </div>
         <div className="right">

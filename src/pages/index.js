@@ -17,7 +17,7 @@ const graphcms = new GraphQLClient("https://api-eu-central-1-shared-euc1-02.hygr
 
 const QUERY = gql`
 {
-  articles {
+  articles (orderBy: createdAt_DESC, last: 3)  {
     title
     slug
     shortDescription
@@ -41,8 +41,12 @@ const QUERY = gql`
 
 export async function getStaticProps(){
   const data = await graphcms.request(QUERY);
+  const other = data.articles.slice(1,4);
+
   return {
     props: {
+      firstArticle: data.articles[0],
+      other: other,
       articles:  data.articles,
       nextMatch: data.nextMatches[0],
       lastMatch: data.lastMatches[0]
@@ -51,11 +55,10 @@ export async function getStaticProps(){
   }
 }
 
-export default function Home({articles, nextMatch, lastMatch}) {
+export default function Home({articles, nextMatch, lastMatch, firstArticle, other}) {
 
-  console.log(articles);
-  console.log(nextMatch);
-  console.log(lastMatch);
+  console.log(firstArticle);
+  console.log(other);
 
   return (
     <Layout>
@@ -72,7 +75,7 @@ export default function Home({articles, nextMatch, lastMatch}) {
           <div className="mt-10">
             <p className='heading'>Najnowsze wiadomości</p>
             <SmallArticle img={true} shortDesc={true}/>
-            <SmallArticle img={false} shortDesc={true}/>
+            <SmallArticle img={true} shortDesc={true} imgUrl={'https://media.graphassets.com/OtKu0lyAS4Ob8oXAxeem'}/>
             <SmallArticle img={true} shortDesc={true}/>
           </div>
           <div className="my-10">
