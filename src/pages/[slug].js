@@ -22,7 +22,6 @@ query Article($slug: String!){
     }
     shortDescription
     description {
-      markdown
       html
     }
     image {
@@ -44,7 +43,7 @@ export async function getStaticPaths(){
   const {articles} = await graphcms.request(SLUGLIST);
   return {
     paths: articles.map((article) => ({params: { slug: article.slug}})),
-    fallback: false,
+    fallback: falseg,
   }
 }
 
