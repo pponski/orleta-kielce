@@ -13,7 +13,7 @@ const SmallArticle = ({img, shortDesc}) => {
 
 
   return (
-    <div class="single-post mb-4 group cursor-pointer flex items-center" className={styles}>
+    <div className={styles}>
       <Link href="/pierwszy-post">
       {img && (<Image src="https://media.graphassets.com/K9zZGA2UTFG6wviwRocZ" width="100" height="200" className='block w-40 rounded-md h-20 object-cover object-center md:group-hover:object-bottom transition-all duration-[2s] linear'></Image>)}
       </Link>
