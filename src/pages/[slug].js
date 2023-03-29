@@ -78,7 +78,7 @@ const Article = ({article}) => {
   return (
     <Layout>
       <Head>
-      <title>{article.title} | Orlęta Kielce</title>
+      <title>{article && article.title} | Orlęta Kielce</title>
       <meta name="description" content={article.shortDescription} />
       </Head>
       <div className="wrapper page-layout">
