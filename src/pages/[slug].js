@@ -90,7 +90,7 @@ const Article = ({article}) => {
           <CategoryBadge />
           <CategoryBadge />
         </div>
-        <div className="article-content" dangerouslySetInnerHTML={{ __html: article.description.html }} />
+        <div className="article-content" dangerouslySetInnerHTML={{ __html: article.description.html}}></div>
         </div>
         <div className="right">
           <p className="heading">Najnowsze wiadomości</p>
