@@ -44,7 +44,7 @@ export async function getStaticPaths(){
   const {articles} = await graphcms.request(SLUGLIST);
   return {
     paths: articles.map((article) => ({params: { slug: article.slug}})),
-    fallback: true,
+    fallback: false,
   }
 }
 
