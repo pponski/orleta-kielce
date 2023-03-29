@@ -39,15 +39,15 @@ const SLUGLIST = gql`
 }
 `;
 
-// export async function getStaticPaths(){
-//   const {articles} = await graphcms.request(SLUGLIST);
-//   return {
-//     paths: articles.map((article) => ({params: { slug: article.slug}})),
-//     fallback: false,
-//   }
-// }
+export async function getStaticPaths(){
+  const {articles} = await graphcms.request(SLUGLIST);
+  return {
+    paths: articles.map((article) => ({params: { slug: article.slug}})),
+    fallback: false,
+  }
+}
 
-export async function getServerSideProps({params}) {
+export async function getStaticProps({params}) {
   const slug = params.slug;
   const data = await graphcms.request(QUERY, { slug });
   const article = data.article;
@@ -78,7 +78,7 @@ const Article = ({article}) => {
     <Layout>
       <Head>
       <title>{article && article.title} | Orlęta Kielce</title>
-      <meta name="description" content={article && article.shortDescription} />
+      <meta name="description" content={article.shortDescription} />
       </Head>
       <div className="wrapper page-layout">
         <div className="left">
@@ -91,7 +91,7 @@ const Article = ({article}) => {
     </div>
     <span className='text-xs py-1 font-medium text-slate-500'>10:51 10.04.2023r.</span>
     </div>
-        <div className="article-content" dangerouslySetInnerHTML={article && { __html: article.description.html}}></div>
+        <div className="article-content" dangerouslySetInnerHTML={{ __html: article.description.html}}></div>
         </div>
         <div className="right">
           <p className="heading">Najnowsze wiadomości</p>
