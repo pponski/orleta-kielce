@@ -17,7 +17,7 @@ const graphcms = new GraphQLClient("https://api-eu-central-1-shared-euc1-02.hygr
 
 const QUERY = gql`
 {
-  articles (orderBy: createdAt_DESC, last: 3)  {
+  articles (orderBy: createdAt_DESC)  {
     title
     slug
     shortDescription
