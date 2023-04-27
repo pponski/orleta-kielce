@@ -41,7 +41,7 @@ const QUERY = gql`
 
 export async function getStaticProps(){
   const data = await graphcms.request(QUERY);
-  const other = data.articles.slice(1,4);
+  const other = data.articles.slice(1);
 
   return {
     props: {
