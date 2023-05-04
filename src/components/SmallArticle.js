@@ -5,7 +5,7 @@ import CategoryBadge from './CategoryBadge';
 
 const SmallArticle = ({article}) => {
 
-  if(article.image){
+  if(article.image.url){
     var styles = 'single-post mb-4 group cursor-pointer flex items-center gap-0 md:gap-4';
   } else {
     var styles = 'single-post mb-4 group cursor-pointer flex items-center gap-0';
@@ -14,7 +14,7 @@ const SmallArticle = ({article}) => {
   return (
     <div className={styles}>
       {article.slug && (<Link href={article.slug} className=''>
-      {article.image && (<Image src={article.image.url} width="340" height="200" className='hidden md:block rounded-md h-40 object-cover object-center md:group-hover:object-bottom transition-all duration-[2s] linear'></Image> )}
+      {article.image.url && (<Image src={article.image.url} width="340" height="200" className='hidden md:block rounded-md h-40 object-cover object-center md:group-hover:object-bottom transition-all duration-[2s] linear'></Image> )}
       </Link>)}
       <div>
       {article.slug && (<Link href={article.slug}>
