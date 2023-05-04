@@ -9,7 +9,7 @@ const Nav = () => {
     <section id="nav">
       <div className="wrapper">
         <Link href="/">
-          <Image src="https://media.graphassets.com/smM8FGuATd6E2SaxTtgJ" width="60" height="60"></Image>
+          <Image src="https://media.graphassets.com/8LRViUgBTMOB889dUNDt" width="60" height="60"></Image>
         </Link>
         <nav>
           <ul>
@@ -17,63 +17,63 @@ const Nav = () => {
               <Link href="/" className='first'>Aktualności</Link>
             </li>
             <li className='group relative'>
-              <Link href="/akademia">Akademia</Link>
+              <Link href="#">Akademia</Link>
               <div className="hidden bg-white py-5 px-8 rounded-md group-hover:block absolute top-full left-[-5px] shadow-md min-w-[180px]">
-              <Link href="/" className='submenu'>O nas</Link>
-              <Link href="/" className='submenu'>Nasza misja</Link>
-              <Link href="/" className='submenu'>Zarząd</Link>
-              <Link href="/" className='submenu'>Kadra trenerska</Link>
-              <Link href="/" className='submenu'>Płatności</Link>
-              <Link href="/" className='submenu'>Regulamin</Link>
-              <Link href="/" className='submenu last'>Dołącz do nas</Link>
+              <Link href="#" className='submenu'>O nas</Link>
+              <Link href="#" className='submenu'>Nasza misja</Link>
+              <Link href="#" className='submenu'>Zarząd</Link>
+              <Link href="#" className='submenu'>Kadra trenerska</Link>
+              <Link href="#" className='submenu'>Płatności</Link>
+              <Link href="#" className='submenu'>Regulamin</Link>
+              <Link href="#" className='submenu last'>Dołącz do nas</Link>
               </div>
             </li>
             <li className='group relative'>
-              <Link href="/druzyny">Drużyny</Link>
+              <Link href="#">Drużyny</Link>
               <div className="hidden bg-white py-5 px-8 rounded-md group-hover:block absolute top-full left-[-5px] shadow-md min-w-[220px]">
-              <Link href="/" className='submenu'>Seniorzy</Link>
-              <Link href="/" className='submenu'>Orlęta U17 - 2006/07</Link>
-              <Link href="/" className='submenu'>Orlęta U16 - 2008/09</Link>
-              <Link href="/" className='submenu'>Orlęta U12 - 2010</Link>
-              <Link href="/" className='submenu'>Orlęta U12 - 2011</Link>
-              <Link href="/" className='submenu'>Orlęta U11 - 2012</Link>
-              <Link href="/" className='submenu'>Orlęta U10 - 2013</Link>
-              <Link href="/" className='submenu'>Orlęta U9 - 2014</Link>
-              <Link href="/" className='submenu'>Orlęta U8 - 2015</Link>
-              <Link href="/" className='submenu'>Orlęta U7 - 2016</Link>
-              <Link href="/" className='submenu last'>Orlęta U6 - 2017</Link>
+              <Link href="#" className='submenu'>Seniorzy</Link>
+              <Link href="#" className='submenu'>Orlęta U17 - 2006/07</Link>
+              <Link href="#" className='submenu'>Orlęta U16 - 2008/09</Link>
+              <Link href="#" className='submenu'>Orlęta U12 - 2010</Link>
+              <Link href="#" className='submenu'>Orlęta U12 - 2011</Link>
+              <Link href="#" className='submenu'>Orlęta U11 - 2012</Link>
+              <Link href="#" className='submenu'>Orlęta U10 - 2013</Link>
+              <Link href="#" className='submenu'>Orlęta U9 - 2014</Link>
+              <Link href="#" className='submenu'>Orlęta U8 - 2015</Link>
+              <Link href="#" className='submenu'>Orlęta U7 - 2016</Link>
+              <Link href="#" className='submenu last'>Orlęta U6 - 2017</Link>
               </div>
             </li>
             <li className='group relative'>
-              <Link href="/treningi">Treningi</Link>
+              <Link href="#">Treningi</Link>
               <div className="hidden bg-white py-5 px-8 rounded-md group-hover:block absolute top-full left-[-5px] shadow-md">
-              <Link href="/" className='submenu'>Harmonogram</Link>
-              <Link href="/" className='submenu'>Baza treningowa</Link>
-              <Link href="/" className='submenu'>Treningi indywidualne</Link>
-              <Link href="/" className='submenu last'>Projekty</Link>
+              <Link href="#" className='submenu'>Harmonogram</Link>
+              <Link href="#" className='submenu'>Baza treningowa</Link>
+              <Link href="#" className='submenu'>Treningi indywidualne</Link>
+              <Link href="#" className='submenu last'>Projekty</Link>
               </div>
             </li>
             <li className='group relative'>
               <Link href="#">Rozgrywki</Link>
               <div className="hidden bg-white py-5 px-8 rounded-md group-hover:block absolute top-full left-[-5px] shadow-md min-w-[220px]">
-              <Link href="/" className='submenu'>Seniorzy</Link>
-              <Link href="/" className='submenu'>Orlęta U17 - 2006/07</Link>
-              <Link href="/" className='submenu'>Orlęta U16 - 2008/09</Link>
-              <Link href="/" className='submenu'>Orlęta U12 - 2010</Link>
-              <Link href="/" className='submenu'>Orlęta U12 - 2011</Link>
-              <Link href="/" className='submenu'>Orlęta U11 - 2012</Link>
-              <Link href="/" className='submenu'>Orlęta U10 - 2013</Link>
-              <Link href="/" className='submenu'>Orlęta U9 - 2014</Link>
-              <Link href="/" className='submenu'>Orlęta U8 - 2015</Link>
-              <Link href="/" className='submenu'>Orlęta U7 - 2016</Link>
-              <Link href="/" className='submenu last'>Orlęta U6 - 2017</Link>
+              <Link href="http://szpnkielce.pl/pl/rozgrywki/" target="_blank" className='submenu'>Seniorzy</Link>
+              <Link href="http://szpnkielce.pl/pl/rozgrywki/" target="_blank" className='submenu'>Orlęta U17 - 2006/07</Link>
+              <Link href="http://szpnkielce.pl/pl/rozgrywki/" target="_blank" className='submenu'>Orlęta U16 - 2008/09</Link>
+              <Link href="http://szpnkielce.pl/pl/rozgrywki/" target="_blank" className='submenu'>Orlęta U12 - 2010</Link>
+              <Link href="http://szpnkielce.pl/pl/rozgrywki/" target="_blank" className='submenu'>Orlęta U12 - 2011</Link>
+              <Link href="http://szpnkielce.pl/pl/rozgrywki/" target="_blank" className='submenu'>Orlęta U11 - 2012</Link>
+              <Link href="http://szpnkielce.pl/pl/rozgrywki/" target="_blank" className='submenu'>Orlęta U10 - 2013</Link>
+              <Link href="http://szpnkielce.pl/pl/rozgrywki/" target="_blank" className='submenu'>Orlęta U9 - 2014</Link>
+              <Link href="http://szpnkielce.pl/pl/rozgrywki/" target="_blank" className='submenu'>Orlęta U8 - 2015</Link>
+              <Link href="http://szpnkielce.pl/pl/rozgrywki/" target="_blank" className='submenu'>Orlęta U7 - 2016</Link>
+              <Link href="http://szpnkielce.pl/pl/rozgrywki/" target="_blank" className='submenu last'>Orlęta U6 - 2017</Link>
               </div>
             </li>
             <li className='group relative'>
-              <Link href="/sponsorzy">Sponsorzy</Link>
+              <Link href="#">Sponsorzy</Link>
               <div className="hidden bg-white py-5 px-8 rounded-md group-hover:block absolute top-full left-[-5px] shadow-md min-w-[220px]">
-              <Link href="/" className='submenu'>Klub Orły Biznesu</Link>
-              <Link href="/" className='submenu last'>Oferta sponsorska</Link>
+              <Link href="#" className='submenu'>Klub Orły Biznesu</Link>
+              <Link href="#" className='submenu last'>Oferta sponsorska</Link>
               </div>
             </li>
             <li>

@@ -10,26 +10,26 @@ const Footer = () => {
       <div className="wrapper">
       <ul>
             <li>
-              <Link href="/akademia" className='first'>Akademia</Link>
-              <Link href="/" className='submenu'>O nas</Link>
-              <Link href="/" className='submenu'>Nasza misja</Link>
-              <Link href="/" className='submenu'>Zarząd</Link>
-              <Link href="/" className='submenu'>Kadra trenerska</Link>
-              <Link href="/" className='submenu'>Płatności</Link>
-              <Link href="/" className='submenu'>Regulamin</Link>
-              <Link href="/" className='submenu last'>Dołącz do nas</Link>
+              <Link href="#" className='first'>Akademia</Link>
+              <Link href="#" className='submenu'>O nas</Link>
+              <Link href="#" className='submenu'>Nasza misja</Link>
+              <Link href="#" className='submenu'>Zarząd</Link>
+              <Link href="#" className='submenu'>Kadra trenerska</Link>
+              <Link href="#" className='submenu'>Płatności</Link>
+              <Link href="#" className='submenu'>Regulamin</Link>
+              <Link href="#" className='submenu last'>Dołącz do nas</Link>
             </li>
             <li>
-              <Link href="/treningi" className='first'>Treningi</Link>
-              <Link href="/" className='submenu'>Harmonogram</Link>
-              <Link href="/" className='submenu'>Baza treningowa</Link>
-              <Link href="/" className='submenu'>Treningi indywidualne</Link>
-              <Link href="/" className='submenu last'>Projekty</Link>
+              <Link href="#" className='first'>Treningi</Link>
+              <Link href="#" className='submenu'>Harmonogram</Link>
+              <Link href="#" className='submenu'>Baza treningowa</Link>
+              <Link href="#" className='submenu'>Treningi indywidualne</Link>
+              <Link href="#" className='submenu last'>Projekty</Link>
             </li>
             <li>
-              <Link href="/sponsorzy" className='first'>Sponsorzy</Link>
-              <Link href="/" className='submenu'>Klub Orły Biznesu</Link>
-              <Link href="/" className='submenu last'>Oferta sponsorska</Link>
+              <Link href="#" className='first'>Sponsorzy</Link>
+              <Link href="#" className='submenu'>Klub Orły Biznesu</Link>
+              <Link href="#" className='submenu last'>Oferta sponsorska</Link>
             </li>
             <li>
             <div className="socials flex gap-5">
