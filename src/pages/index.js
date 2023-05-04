@@ -20,7 +20,12 @@ const QUERY = gql`
   articles (orderBy: createdAt_DESC)  {
     title
     slug
-    description
+    description {
+      html
+      markdown
+      raw
+      text
+    }
     shortDescription
     image {
       url(transformation: {document: {output: {}}, image: {resize: {}}})
