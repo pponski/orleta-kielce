@@ -31,22 +31,21 @@ const QUERY = gql`
 
 export async function getStaticProps(){
   const data = await graphcms.request(QUERY);
-  const other = data.articles.slice(1);
+  const articles = data.articles.slice(1);
 
   return {
     props: {
       firstArticle: data.articles[0],
-      other: other,
-      articles:  data.articles,
+      articles: articles,
     },
     revalidate: 60
   }
 }
 
-export default function Home({articles, firstArticle, other}) {
+export default function Home({articles, firstArticle}) {
 
   console.log(firstArticle);
-  console.log(other);
+  console.log(articles);
 
   return (
     <Layout>
@@ -59,24 +58,16 @@ export default function Home({articles, firstArticle, other}) {
       {/* {articles ? articles.map(article=> <p key={article.title}>{article.title}</p>) : 'loading...'} */}
       <div className="wrapper page-layout">
         <div className="left">
-          <BigArticle/>
+          <BigArticle firstArticle={firstArticle}/>
           <div className="mt-10">
             <p className='heading'>Najnowsze wiadomości</p>
-            <SmallArticle img={true} shortDesc={true}/>
-            <SmallArticle img={true} shortDesc={true} imgUrl={'https://media.graphassets.com/OtKu0lyAS4Ob8oXAxeem'}/>
-            <SmallArticle img={true} shortDesc={true}/>
+            {articles.map(article=> (
+              <SmallArticle article={article} />
+             ))}
           </div>
-          <div className="my-10">
+          {/* <div className="my-10">
           <Banner/>
-          </div>
-          <div className="posts">
-            <SmallArticle img={true} shortDesc={true}/>
-            <SmallArticle img={true} shortDesc={true}/>
-            <SmallArticle img={true} shortDesc={true}/>
-          </div>
-          <div className="my-10">
-          <Banner/>
-          </div>
+          </div> */}
           </div>
         <div className="right">
         <NextMatch/>
