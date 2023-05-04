@@ -13,15 +13,15 @@ const SmallArticle = ({article}) => {
 
   return (
     <div className={styles}>
-      {article.slug && (<Link href={article.slug} className=''>
-      {article.image.url && (<Image src={article.image.url} width="340" height="200" className='hidden md:block rounded-md h-40 object-cover object-center md:group-hover:object-bottom transition-all duration-[2s] linear'></Image> )}
+      {article && (<Link href={article.slug} className=''>
+      {article && (<Image src={article.image.url} width="340" height="200" className='hidden md:block rounded-md h-40 object-cover object-center md:group-hover:object-bottom transition-all duration-[2s] linear'></Image> )}
       </Link>)}
       <div>
-      {article.slug && (<Link href={article.slug}>
+      {article && (<Link href={article.slug}>
         <p class="text-base font-bold group-hover:text-green-700">{article.title}</p>
         </Link>)}
-        {article.slug && (<Link href={article.slug}>
-      {article.shortDescription && (<p class="text-xs pb-1 max-w-xl font-normal">{article.shortDescription}</p>)}
+        {article && (<Link href={article.slug}>
+      {article && (<p class="text-xs pb-1 max-w-xl font-normal">{article.shortDescription}</p>)}
       </Link>)}
       <div className="info flex flex-col items-start lg:flex-row lg:gap-4 lg:items-center">
     {/* <div className="categories">
