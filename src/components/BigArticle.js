@@ -18,10 +18,10 @@ const BigArticle = ({firstArticle}) => {
           <CategoryBadge />
           <CategoryBadge />
     </div>
-    <span className='text-xs py-1 font-medium text-slate-500'>10:51 10.04.2023r.</span>
+    {/* <span className='text-xs py-1 font-medium text-slate-500'>10:51 10.04.2023r.</span> */}
     </div>
     <Link href="/pierwszy-post">
-    <p className='text-sm pt-1 font-normal'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, iste natus. Provident modi ex dignissimos nemo iste ea reiciendis perspiciatis. Fuga laborum nesciunt nobis, atque facilis assumenda enim amet molestias!</p>
+    {firstArticle.shortDescription && <p className='text-sm pt-1 font-normal'>{firstArticle.shortDescription}</p>}
     </Link>
     {/* <Link href="/pierwszy-post">
       <ButtonPrimary>Czytaj więcej</ButtonPrimary>
