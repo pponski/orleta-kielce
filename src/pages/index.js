@@ -62,7 +62,7 @@ export default function Home({articles, firstArticle}) {
           <div className="mt-10">
             <p className='heading'>Najnowsze wiadomości</p>
             {articles.map(article=> (
-              <SmallArticle article={article} />
+              <SmallArticle article={article} key={article.slug} />
              ))}
           </div>
           {/* <div className="my-10">
