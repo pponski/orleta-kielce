@@ -25,12 +25,7 @@ const QUERY = gql`
       url(transformation: {document: {output: {}}, image: {resize: {}}})
     }
   }
-  nextMatches {
-    awayTeam
-    homeTeam
-    result
-  }
-  lastMatches {
+  Matches {
     awayTeam
     homeTeam
     result
@@ -48,17 +43,17 @@ export async function getStaticProps(){
       firstArticle: data.articles[0],
       other: other,
       articles:  data.articles,
-      nextMatch: data.nextMatches[0],
-      lastMatch: data.lastMatches[0]
+      matches: data.matches,
     },
     revalidate: 60
   }
 }
 
-export default function Home({articles, nextMatch, lastMatch, firstArticle, other}) {
+export default function Home({articles, matches, firstArticle, other}) {
 
   console.log(firstArticle);
   console.log(other);
+  console.log(matches);
 
   return (
     <Layout>
