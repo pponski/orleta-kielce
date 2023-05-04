@@ -25,7 +25,7 @@ const QUERY = gql`
       url(transformation: {document: {output: {}}, image: {resize: {}}})
     }
   }
-  Matches {
+  matches {
     awayTeam
     homeTeam
     result
