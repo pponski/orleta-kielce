@@ -5,7 +5,7 @@ import CategoryBadge from './CategoryBadge';
 
 const SmallArticle = ({title, slug, image, shortDescription}) => {
 
-  if(img){
+  if(image){
     var styles = 'single-post mb-4 group cursor-pointer flex items-center gap-0 md:gap-4';
   } else {
     var styles = 'single-post mb-4 group cursor-pointer flex items-center gap-0';
