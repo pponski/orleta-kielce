@@ -11,6 +11,7 @@ const SmallArticle = ({title, slug, image, shortDescription}) => {
     var styles = 'single-post mb-4 group cursor-pointer flex items-center gap-0';
   }
 
+  console.log(title, slug, image, shortDescription);
 
 
 
