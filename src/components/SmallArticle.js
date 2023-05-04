@@ -18,7 +18,7 @@ const SmallArticle = ({title, slug, image, shortDescription}) => {
   return (
     <div className={styles}>
       <Link href={slug} className=''>
-      <Image src={image.url} width="340" height="200" className='hidden md:block rounded-md h-40 object-cover object-center md:group-hover:object-bottom transition-all duration-[2s] linear'></Image>
+      {/* <Image src={image.url} width="340" height="200" className='hidden md:block rounded-md h-40 object-cover object-center md:group-hover:object-bottom transition-all duration-[2s] linear'></Image> */}
       </Link>
       <div>
         <Link href={slug}>
