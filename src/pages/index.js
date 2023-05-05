@@ -50,8 +50,8 @@ export async function getStaticProps(){
 
 export default function Home({articles, firstArticle}) {
 
-  console.log(firstArticle);
-  console.log(articles);
+  // console.log(firstArticle);
+  // console.log(articles);
 
   return (
     <Layout>
@@ -59,7 +59,8 @@ export default function Home({articles, firstArticle}) {
         <title>Orlęta Kielce | Oficjalna strona</title>
         <meta name="description" content="Orlęta Kielce - Akademia ze srebrną gwiazdką certyfikacji PZPN" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="https://media.graphassets.com/smM8FGuATd6E2SaxTtgJ" />
+        <link rel="icon" href="https://media.graphassets.com/8LRViUgBTMOB889dUNDt" />
+        <meta name="robots" content="noindex"></meta>
       </Head>
       {/* {articles ? articles.map(article=> <p key={article.title}>{article.title}</p>) : 'loading...'} */}
       <div className="wrapper page-layout">

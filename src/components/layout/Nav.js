@@ -8,9 +8,12 @@ const Nav = () => {
   return (
     <section id="nav">
       <div className="wrapper">
+        <div className='flex'>
         <Link href="/">
-          <Image src="https://media.graphassets.com/8LRViUgBTMOB889dUNDt" width="60" height="60"></Image>
+          <Image src="https://media.graphassets.com/8LRViUgBTMOB889dUNDt" width="70" height="70"></Image>
         </Link>
+          <Image src="https://media.graphassets.com/wlyIPyNJT2qcOz6zD4rm" width="105" height="70"></Image>
+        </div>
         <nav>
           <ul>
             <li className=''>

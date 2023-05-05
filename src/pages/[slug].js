@@ -79,6 +79,7 @@ const Article = ({article}) => {
       <Head>
       <title>{article && article.title} | Orlęta Kielce</title>
       <meta name="description" content={article.shortDescription} />
+      <meta name="robots" content="noindex"></meta>
       </Head>
       <div className="wrapper page-layout">
         <div className="left">
